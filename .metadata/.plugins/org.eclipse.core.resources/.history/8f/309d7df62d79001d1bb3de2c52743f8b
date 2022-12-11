@@ -1,0 +1,21 @@
+public class Human {
+
+	String name;
+	int age;
+	double weight;
+	
+	Human(String name,int age,double weight){   //constructors don't have any return type ; it is used to distinguish between constructors and method
+		
+		this.name = name;     //this. keyword to assign name to the human constructor
+		this.age = age;		  //this. keyword to assign age to the human constructor
+		this.weight = weight; //this. keyword to assign weight to the human constructor
+	}
+	
+	void eat() {
+		System.out.println(this.name+" is eating");
+	}
+	void drink() {
+		System.out.println(this.name+" is drinking *burp*");
+	}
+		
+}
